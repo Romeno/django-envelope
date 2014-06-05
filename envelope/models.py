@@ -18,6 +18,7 @@ class Appeal(models.Model):
     email = models.EmailField(verbose_name="Email")
     subject = models.CharField(max_length=100, verbose_name="Тема", blank=True)
     message = models.TextField(verbose_name="Сообщение")
+    date_sent = models.DateTimeField(verbose_name="Дата", auto_now_add=True)
 
     template_name = 'envelope/email_body.txt'
 
