@@ -1,10 +1,6 @@
 {% load i18n %}
 {% trans "Message from the contact form" %}
-{% trans "Sender" %}: {{ sender }} ({{ email }})
-{% trans "The message follows." %}
-================================================================================
-{{ message }}
-================================================================================
+{% trans "Sender" %}: {{ appeal.sender }} ({{ appeal.email }})
 
---
-{% trans "message sent with envelope - a contact form app for Django" %}
+{{ appeal.message }}
+

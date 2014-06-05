@@ -17,7 +17,7 @@ from envelope import signals
 from envelope.forms import ContactForm
 
 
-logger = logging.getLogger('envelope.views')
+logger = logging.getLogger('envelope')
 
 
 class ContactView(FormView):
